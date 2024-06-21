@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="asset/img/logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar" id="myDIV">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+
+            <div class="libray">
+                <div class="option">
+                    <div class="lib-option">
+                        <img src="asset/img/library_icon.png" alt="">
+                        <a href="#">Your libray</a>
+                    </div>
+
+                    <div class="icon">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="lib-box">
+                    <div class="box1">
+                        <div class="box-p1">Create your first playlist</div>
+                        <div class="box-p2">It's easy we'll help you</div>
+                        <button class="badge">Create Playlist</button>
+                    </div>
+                    <div class="box2">
+                        <div class="box-p1">Let's find some podcasts to follow</div>
+                        <div class="box-p2">We'll keep you updated on new episode</div>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="nav2">
+                <div class="part1">
+                    <div class="arrow">
+                        <img src="asset/img/backward_icon.png" onclick="myFunction()">
+                        <img src="asset/img/forward_icon.png" class="hide" onclick="myFunction()">
+                    </div>
+                    <div class="nav2-button">
+                        <button class=" hide button">Explore Premium</button>
+                        <button class="button" style="background-color: black; color: white;"><i
+                                class="fa-regular fa-circle-down"></i>Install App</button>
+                        <span><i class="fa-regular fa-bell"></i></span>
+                        <span><i class="fa-regular fa-user"></i></span>
+                        <span id="setting"><i class="fa-solid fa-gear"></i></span>
+                    </div>
+                </div>
+                <div class="part2">
+                    <button class="btn1">All</button>
+                    <button class="btn2">Music</button>
+                    <button class="btn3">Podacts</button>
+                </div>
+            </div>
+
+            <h2>Featured Charts</h2>
+            <div class="card-container">
+
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 8 8" id="play">
+                        <path d="M4 0C1.79 0 0 1.79 0 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" fill="#20C75C"></path>
+                        <path d="M3 2l3 2-3 2V2z" fill="black"></path>
+                    </svg>
+                    <img src="asset/img/card1img.jpeg" class="card-img" 
+                    <p class="title">Top Songs - India</p>
+                    <p class="info">Your Weekly update of most played tracks right...</p>
+                </div>
+
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 8 8" id="play">
+                        <path d="M4 0C1.79 0 0 1.79 0 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" fill="#20C75C"></path>
+                        <path d="M3 2l3 2-3 2V2z" fill="black"></path>
+                    </svg>
+                    <img src="asset/img/card2img.jpg" class="card-img">
+                    <p class="title">Top 50 - India</p>
+                    <p class="info">Your daily update of most played tracks right...</p>
+                </div>
+
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 8 8" id="play">
+                        <path d="M4 0C1.79 0 0 1.79 0 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" fill="#20C75C"></path>
+                        <path d="M3 2l3 2-3 2V2z" fill="black"></path>
+                    </svg>
+                    <img src="asset/img/card3img.jpeg" class="card-img">
+                    <p class="title">Top Songs - Global</p>
+                    <p class="info">Your weekly update of most played tracks right...</p>
+                </div>
+
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 8 8" id="play">
+                        <path d="M4 0C1.79 0 0 1.79 0 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" fill="#20C75C"></path>
+                        <path d="M3 2l3 2-3 2V2z" fill="black"></path>
+                    </svg>
+                    <img src="asset/img/card4img.jpeg" class="card-img">
+                    <p class="title">Viral 50 - India</p>
+                    <p class="info">Your daily update of most viral tracks right...</p>
+                </div>
+
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 8 8" id="play">
+                        <path d="M4 0C1.79 0 0 1.79 0 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" fill="#20C75C"></path>
+                        <path d="M3 2l3 2-3 2V2z" fill="black"></path>
+                    </svg>
+                    <img src="asset/img/card5img.jpeg" class="card-img">
+                    <p class="title">Top 50 - Global</p>
+                    <p class="info">Your daily update of most played tracks right...</p>
+                </div>
+            </div>
+
+            <h2>Spotify orginal podcasts</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="asset/img/pod1.png" class="card-img">
+                    <p class="title">The Joe Rogan Experience</p>
+                    <p class="info">Joe Rogan</p>
+                </div>
+
+                <div class="card">
+                    <img src="asset/img/pod2.jpeg" class="card-img">
+                    <p class="title">Prekotha ( Bengali Horror..</p>
+                    <p class="info">Gourab Tapadar</p>
+                </div>
+
+                <div class="card">
+                    <img src="asset/img/pod3.jpeg" class="card-img">
+                    <p class="title">Shree Krishna Leela Hindi..</p>
+                    <p class="info">Spotify Studio</p>
+                </div>
+
+                <div class="card">
+                    <img src="asset/img/pod4.jpeg" class="card-img">
+                    <p class="title">Garikapati Gyananidhi...</p>
+                    <p class="info">Telugu One</p>
+                </div>
+
+                <div class="card">
+                    <img src="asset/img/pod5.jpeg" class="card-img">
+                    <p class="title">Gopi Sudhakar Ennenna...</p>
+                    <p class="info">Spotify Studio</p>
+                </div>
+            </div>
+
+            <h2>Try somethings else</h2>
+            <div class="card-container">
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 8 8" id="play">
+                        <path d="M4 0C1.79 0 0 1.79 0 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" fill="#20C75C"></path>
+                        <path d="M3 2l3 2-3 2V2z" fill="black"></path>
+                    </svg>
+                    <img src="asset/img/try1.jpeg" class="card-img">
+                    <p class="title">Hots Hits Hindi</p>
+                    <p class="info">Hottest hindi music served here...</p>
+                </div>
+
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 8 8" id="play">
+                        <path d="M4 0C1.79 0 0 1.79 0 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" fill="#20C75C"></path>
+                        <path d="M3 2l3 2-3 2V2z" fill="black"></path>
+                    </svg>
+                    <img src="asset/img/try2.jpeg" class="card-img">
+                    <p class="title">Hot Hits Punjabi</p>
+                    <p class="info">Catch the hottest Punjabi tracks...</p>
+                </div>
+
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 8 8" id="play">
+                        <path d="M4 0C1.79 0 0 1.79 0 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" fill="#20C75C"></path>
+                        <path d="M3 2l3 2-3 2V2z" fill="black"></path>
+                    </svg>
+                    <img src="asset/img/try3.jpeg" class="card-img">
+                    <p class="title">Hot Hits Marathi</p>
+                    <p class="info">Tune into hottest Marathi songs...</p>
+                </div>
+
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 8 8" id="play">
+                        <path d="M4 0C1.79 0 0 1.79 0 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" fill="#20C75C"></path>
+                        <path d="M3 2l3 2-3 2V2z" fill="black"></path>
+                    </svg>
+                    <img src="asset/img/try4.jpeg" class="card-img">
+                    <p class="title">Indie India</p>
+                    <p class="info">Best of the Indian Indie scence...</p>
+                </div>
+
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 8 8" id="play">
+                        <path d="M4 0C1.79 0 0 1.79 0 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" fill="#20C75C"></path>
+                        <path d="M3 2l3 2-3 2V2z" fill="black"></path>
+                    </svg>
+                    <img src="asset/img/try5.jpeg" class="card-img">
+                    <p class="title">I - Pop Superhits</p>
+                    <p class="info">Biggest hits from your favourite I-Pop star...</p>
+                </div>
+            </div>
+
+            <h2>Shows to try</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="asset/img/show1.jpeg" class="card-img">
+                    <p class="title">The Jai Singh Show</p>
+                    <p class="info">Nitin Jai Singh Siwach</p>
+                </div>
+
+                <div class="card">
+                    <img src="asset/img/show2.jpeg" class="card-img">
+                    <p class="title">Karmic Konnection</p>
+                    <p class="info">Salil</p>
+                </div>
+
+                <div class="card">
+                    <img src="asset/img/show3.png" class="card-img">
+                    <p class="title">TED Talks Daily</p>
+                    <p class="info">TED</p>
+                </div>
+
+                <div class="card">
+                    <img src="asset/img/show4.jpeg" class="card-img">
+                    <p class="title">Huberman Lab</p>
+                    <p class="info">Scicomm Media </p>
+                </div>
+
+                <div class="card">
+                    <img src="asset/img/show5.jpeg" class="card-img">
+                    <p class="title">The Ranveer Show</p>
+                    <p class="info">Ranveer Allahbadia</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="foot1">
+                    <div class="about">
+                        <div class="a1">
+                            <h5>Company</h5>
+                            <p>About</p>
+                            <p>Jobs</p>
+                            <p>For the Record</p>
+                        </div>
+
+                        <div class="a2">
+                            <h5>Communties</h5>
+                            <p>For Artists</p>
+                            <p>Developer</p>
+                            <p>Adversting</p>
+                            <p>Investor</p>
+                            <p>Vendors</p>
+                        </div>
+
+                        <div class="a3">
+                            <h5>Socail Links</h5>
+                            <p>Support</p>
+                            <p>Free Mobile App</p>
+                        </div>
+
+                        <div class="a4">
+                            <h5>Spotify Plans</h5>
+                            <p>Premium Individual</p>
+                            <p>Premium Duo</p>
+                            <p>Premium Family</p>
+                            <p>Premium Student</p>
+                            <p>Spotify Free</p>
+                        </div>
+                    </div>
+
+                    <div class="social">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                </div>
+
+                <div class="part-line"></div>
+
+                <div class="foot2">
+                    <div class="end1">
+                        <span>Legal</span>
+                        <span>Safety & Privacy Center</span>
+                        <span>Privacy Policy</span>
+                        <span>Cookies</span>
+                        <span>About Ads</span>
+                        <span>Accessibility</span>
+                    </div>
+                    <div class="end2">
+
+                        <span> &#169; 2024 Spotify AB</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="music-player">
+        <div class="album">
+            <img src="asset/control/album_img.jpeg" alt="Clickable Image">
+            <div class="abl">
+                <p id="name">Satranga( From "ANIMAL" )</p>
+                <span class="p-des">
+                    <p id="des">Arijit Singh,&nbsp;</p>
+                    <p id="des">Shreya Puranik,&nbsp;</p>
+                    <p id="des">Siddhart - Garima</p>
+                </span>
+            </div>
+            <i class="ri-add-circle-line"></i>
+        </div>
+        <div class="part-line music-line"></div>
+        <div class="player">
+            <div class="player-control">
+                <img src="asset/img/player_icon1.png" class="player-control-icon">
+                <img src="asset/img/player_icon2.png" class="player-control-icon" id="play-audio1">
+                <audio src="asset/music/O Sajni Re_320(PagalWorld.com.sb).mp3"  id="audio1" style="display: none;"></audio>
+                
+                <div class="center" >
+                    <input type="checkbox" name="" id="toggle"  />
+                    <label for="toggle" class="ani-btn" id="play-song2" >
+                        <div class="lines">
+                            <div class="line"></div>
+                            <div class="move">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <audio id="song2" src="asset/music/Satranga_320(PagalWorld.com.sb).mp3" style="display: none;"></audio>
+                <img src="asset/img/player_icon4.png" class="player-control-icon" id="play-image3">
+                <audio src="asset/music/Gulabi Sadi Ani Lali_320(PagalWorld.com.sb).mp3"  id="image3" style="display: none;"></audio>
+                <img src="asset/img/player_icon5.png" class="player-control-icon">
+
+            </div>
+
+            <div class="playback-bar">
+                <span class="current-time">01:55</span>
+                <input type="range" min="0" max="100" class="progress-bar" step="1">
+                <span class="tot-time">3:33</span>
+            </div>
+
+        </div>
+
+        <div class="control">
+            <i class="ri-video-line"></i>
+            <?xml version="1.0" ?><svg class="icon icon-tabler icon-tabler-microphone-2" fill="none" height="20"
+                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+                <path d="M15.002 12.9a5 5 0 1 0 -3.902 -3.9" />
+                <path d="M15.002 12.9l-3.902 -3.899l-7.513 8.584a2 2 0 1 0 2.827 2.83l8.588 -7.515z" />
+            </svg>
+            <i class="fa-solid fa-bars"></i>
+            <?xml version="1.0" ?><svg fill="none" height="28" viewBox="0 0 20 28" width="20"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect height="26" rx="3" stroke="white" stroke-width="2" width="18" x="1" y="1" />
+                <path d="M12.148 14L8.25 16.5006V11.4994L12.148 14Z" stroke="white" stroke-width="2" />
+                <path d="M1 8H19" stroke="white" stroke-width="2" />
+                <path d="M1 20H19" stroke="white" stroke-width="2" />
+            </svg>
+            <i class="ri-volume-up-line"></i>
+            <input type="range" min="1" max="100">
+            <i class="ri-picture-in-picture-fill"></i>
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
